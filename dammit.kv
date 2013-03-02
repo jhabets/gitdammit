@@ -1,0 +1,21 @@
+#:kivy 1.5.1
+
+<DammitGame>:
+    
+    canvas:
+        Rectangle:
+            pos: self.center_x-5, 0
+            size: 10, self.height
+    
+    Label:
+        font_size: 35  
+        center_x: root.width / 4
+        top: root.top - 50
+        text: "tracked: " + str(root.tracked)
+        
+    Label:
+        font_size: 35  
+        center_x: root.width * 3 / 4
+        top: root.top - 50
+        text: "untracked: " + str(root.untracked)
+   
